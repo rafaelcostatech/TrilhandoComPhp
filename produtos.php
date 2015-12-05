@@ -1,14 +1,17 @@
 <?php
 $link = 'produtos';
+use Content\Content;
+include 'Content/Content.php';
 include 'head.php';
 include 'header.php'; ?>
 
 <div class="container">
     <div class="page-header">
         <h1>Nossos Produtos</h1><br/>
-        <h4>PROD01 - Cervis</h4>
-        <h4>PROD02 - Cachacis</h4>
-        <h4>PROD03 - Vinhis</h4>
+        <?php 
+            $conteudo = new Content(3);
+            echo $teste;
+        ?>
     </div>
 </div>
 

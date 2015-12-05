@@ -4,50 +4,53 @@
         <ul class="nav nav-pills nav-justified">
             <li role="presentation"
                 <?php
-                    if ($link == 'home') {
-                        echo 'class="active"';}
+                    if (!isset($_GET['page'])) {
+                            echo 'class="active"';}
+                    elseif ($_GET['page'] == 'index') {
+                            echo 'class="active"';
+                        }
                     else {
                         echo 'class="null"';
                     }
                 ?>
-            ><a href="index.php">Home</a></li>
+            ><a href="index.php?page=index&conteudo=1">Home</a></li>
 
             <li role="presentation"
                 <?php
-                    if ($link == 'empresa') {
+                    if ($_GET['page'] == 'empresa')       {
                         echo 'class="active"';}
                 else {
                         echo 'class="null"';
                 }
                 ?>
-            ><a href="empresa.php">Empresa</a></li>
+            ><a href="empresa.php?page=empresa&conteudo=2">Empresa</a></li>
             <li role="presentation"
                 <?php
-                if ($link == 'produtos') {
+                if ($_GET['page'] == 'produtos') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="produtos.php">Produtos</a></li>
+            ><a href="produtos.php?page=produtos&conteudo=3">Produtos</a></li>
             <li role="presentation"
                 <?php
-                if ($link == 'servicos') {
+                if ($_GET['page'] == 'servicos') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="servicos.php">Serviços</a></li>
+            ><a href="servicos.php?page=servicos&conteudo=4>">Serviços</a></li>
             <li role="presentation"
                 <?php
-                if ($link == 'contato') {
+                if ($_GET['page'] == 'contato') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="contato.php">Contato</a></li>
+            ><a href="contato.php?page=contato">Contato</a></li>
         </ul>
     </div>
 </header>

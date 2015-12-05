@@ -1,14 +1,17 @@
 <?php
 $link = 'servicos';
+use Content\Content;
+include 'Content/Content.php';
 include 'head.php';
 include 'header.php'; ?>
 
 <div class="container">
     <div class="page-header">
         <h1>Nossos Serviços</h1><br/>
-        <h4>SRV001 - Mussum ipsum cacilds</h4>
-        <h4>SRV002 - Vidis litro abertis</h4>
-        <h4>SRV003 - Consetis adipiscings elitis</h4>
+        <?php 
+            $conteudo = new Content(4);
+            echo $teste;
+        ?>
     </div>
 </div>
 

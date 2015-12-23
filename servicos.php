@@ -16,5 +16,6 @@ include 'header.php'; ?>
 </div>
 
 <?php
-include 'footer.php'; ?>
+include 'footer.php'; 
+?>
 

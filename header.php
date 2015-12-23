@@ -13,7 +13,7 @@
                         echo 'class="null"';
                     }
                 ?>
-            ><a href="index.php?page=index&conteudo=1">Home</a></li>
+            ><a href="home.php?page=index&conteudo=1">Home</a></li>
 
             <li role="presentation"
                 <?php

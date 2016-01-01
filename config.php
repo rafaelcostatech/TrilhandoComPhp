@@ -1,9 +1,28 @@
 <?php
 
 $param = array(
-	'database' => '', // Defina qual o Banco de Sados a ser utilizado
- 	'host' => '', // Defina o host do Banco de Dados
- 	'dbaseName' => '', // Defina o nome da Base de dados que será utilizada
- 	'usuario' => '', // Defina o usuário do banco de dados do seu sistema
- 	'password' => '' // Defina a Senha do banco de dados do seu sistema
+	'database' => 'mysql', // Defina qual o Banco de Dados a ser utilizado
+ 	'host' => 'localhost', // Defina o host do Banco de Dados
+ 	'dbaseName' => 'trilhando', // Defina o nome da Base de dados que será utilizada
+ 	'usuario' => 'root', // Defina o usuário do banco de dados do seu sistema
+ 	'password' => '123456' // Defina a Senha do banco de dados do seu sistema
   	);
+
+
+// Registre aqui as rotas da aplicação.
+
+$routes = array('home', 'empresa', 'produtos', 'servicos', 'contato'); 
+
+
+// Para cada rota registrada acima que contenham conteúdo dinâmico para ser guardado em bd, registrar o conteúdo abaixo.
+
+$conteudo = array(
+	'home' => '<p>Sejam bem vindos ao nosso site.</p>',
+	'empresa' => '<p>Nossa empresa tem PHP na veia!</p>',
+	'produtos' => '<p>Prod001 - Cachacis</p>
+				   <p>Prod002 - Cervejis</p>
+				   <p>Prod003 - Vinhis</p>',
+	'servicos' => '<p>Serv001 - PhPeis</p>
+				   <p>Serv002 - Cachacis</p>
+				   <p>Serv003 - BancodeDadeis</p>',
+	);

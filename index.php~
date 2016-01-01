@@ -1,6 +1,8 @@
 <?php
 include 'config.php';
 
+chdir(dirname(__DIR__));
+
 function rotas($routes)
 {
 

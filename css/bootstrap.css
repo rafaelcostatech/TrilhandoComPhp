@@ -1410,7 +1410,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 10px 0 20px;
   border-bottom: 1px solid #eee;
 }
 ul,
@@ -6761,3 +6761,11 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+#busca {
+  text-align: right;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: none;
+
+}

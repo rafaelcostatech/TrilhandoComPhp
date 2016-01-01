@@ -1,56 +1,71 @@
+<?php // Sempre que clicar em um link o sistema direciona para uma rota ex: "a href='home'", vai logar no browse em 'home' e o index.php direciona para a rota correta. ?>
+
 <body>
 <header>
     <div class="container">
         <ul class="nav nav-pills nav-justified">
             <li role="presentation"
                 <?php
-                    if (!isset($_GET['page'])) {
+                    if ($rota == 'home') {
                             echo 'class="active"';}
-                    elseif ($_GET['page'] == 'index') {
-                            echo 'class="active"';
-                        }
+                            elseif ($rota == '') {
+                                echo 'class="active"';
+                                $rota = 'home'; //Se a rota for NULL o sistema seta a variável como 'home' para definir o conteúdo a ser exibido.
+                            }
                     else {
                         echo 'class="null"';
                     }
                 ?>
-            ><a href="home.php?page=index&conteudo=1">Home</a></li>
+            ><a href="home">Home</a></li>
 
             <li role="presentation"
                 <?php
-                    if ($_GET['page'] == 'empresa')       {
+                    if ($rota == 'empresa')       {
                         echo 'class="active"';}
                 else {
                         echo 'class="null"';
                 }
                 ?>
-            ><a href="empresa.php?page=empresa&conteudo=2">Empresa</a></li>
+            ><a href="empresa">Empresa</a></li>
             <li role="presentation"
                 <?php
-                if ($_GET['page'] == 'produtos') {
+                if ($rota == 'produtos') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="produtos.php?page=produtos&conteudo=3">Produtos</a></li>
+            ><a href="produtos">Produtos</a></li>
             <li role="presentation"
                 <?php
-                if ($_GET['page'] == 'servicos') {
+                if ($rota == 'servicos') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="servicos.php?page=servicos&conteudo=4>">Serviços</a></li>
+            ><a href="servicos">Serviços</a></li>
             <li role="presentation"
                 <?php
-                if ($_GET['page'] == 'contato') {
+                if ($rota == 'contato') {
                     echo 'class="active"';}
                 else {
                     echo 'class="null"';
                 }
                 ?>
-            ><a href="contato.php?page=contato">Contato</a></li>
+            ><a href="contato">Contato</a></li>
         </ul>
-    </div>
+    <form class="form-horizontal" role="form" method="get" ACTION="busca.php">
+        <div class="row">
+          <div class="col-lg-3" id="busca">
+            <div class="input-group">
+              <input type="text" class="form-control" name="busca" placeholder="Digite aqui sua busca">
+                    <span class="input-group-btn">
+                       <button type="submit" class="btn btn-success" type="button">Busca</button>
+                    </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </form>
+</div>
 </header>

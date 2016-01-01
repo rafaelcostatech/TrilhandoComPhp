@@ -1,5 +1,5 @@
 <?php
-$link = 'contato';
+
 include 'head.php';
 include 'header.php'; ?>
 

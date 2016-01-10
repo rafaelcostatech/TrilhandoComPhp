@@ -4115,6 +4115,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid;
   color: #337AB7;
 }
+
 .nav-justified > li {
   float: none;
 }
@@ -6768,4 +6769,58 @@ button.close {
   margin-top: 10px;
   margin-bottom: none;
 
+}
+#admin {
+  text-align: center;
+}
+#navadmin {
+  background-color: rgba(0,0,0,.3);
+}
+
+#bodyadmin {
+  background-color: rgba(0,0,0,.1); 
+}
+
+.aadmin {
+  color: white;
+}
+
+#clicked {
+  background-color: rgba(0,0,0,1);
+}
+
+#h2admin {
+  text-align: center;
+  color: blue;
+}
+
+.retorno{
+  color: black;
+}
+
+#areaadminbtn {
+  text-align: center;
+}
+
+#sitebtn {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+#disconect {
+  text-align: center;
+  padding-top: 5px;
+}
+
+#bodydisconect {
+background-color: rgba(0,0,40,.4);
+}
+
+#disconect {
+  background-color: rgba(255,0,0,.5);
+}
+
+#return {
+  background-color: rgba(0,0,255,.5);
 }

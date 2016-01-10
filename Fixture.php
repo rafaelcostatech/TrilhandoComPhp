@@ -14,7 +14,18 @@ include 'config.php';
     foreach ($conteudo as $key => $value) {
         $conexao->query("INSERT INTO conteudo (rota, mensagem)
             VALUES ('$key', '$value')");
-}
+    }
+    
+    $conexao->query("DROP TABLE IF EXISTS usuarios;");
+    
+    $conexao->query("CREATE TABLE usuarios (
+        login VARCHAR(100),
+        senha VARCHAR(100));");
+
+    foreach ($usuarios as $key => $value) {
+        $conexao->query("INSERT INTO usuarios (login, senha)
+            VALUES ('$key', '$value')");
+    }
 ?>
 
 <div class="container">
